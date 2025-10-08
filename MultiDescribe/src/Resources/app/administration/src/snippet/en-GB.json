@@ -1,0 +1,9 @@
+{
+  "multi-describe": {
+    "tabTitle": "Descriptions",
+    "card": {
+      "title": "Alternative Descriptions by Sales Channel",
+      "noData": "No sales channels or custom fields found."
+    }
+  }
+}

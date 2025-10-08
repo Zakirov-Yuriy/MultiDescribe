@@ -1,0 +1,11 @@
+{
+  "main.js": {
+    "file": "assets/multi-describe-CAE9BKzz.js",
+    "name": "multi-describe",
+    "src": "main.js",
+    "isEntry": true,
+    "css": [
+      "assets/multi-describe-tn0RQdqM.css"
+    ]
+  }
+}

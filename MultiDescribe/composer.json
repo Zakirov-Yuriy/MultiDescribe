@@ -1,0 +1,23 @@
+{
+  "name": "swag/multi-describe",
+  "description": "Provides alternative product descriptions for different sales channels and languages.",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cline"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MultiDescribe\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "MultiDescribe\\MultiDescribe",
+    "label": {
+      "de-DE": "Alternative Produktbeschreibungen",
+      "en-GB": "Alternative Product Descriptions"
+    }
+  }
+}

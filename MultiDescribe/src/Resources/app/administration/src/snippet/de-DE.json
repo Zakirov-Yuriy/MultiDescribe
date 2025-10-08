@@ -1,0 +1,9 @@
+{
+  "multi-describe": {
+    "tabTitle": "Beschreibungen",
+    "card": {
+      "title": "Alternative Beschreibungen nach Vertriebskanal",
+      "noData": "Keine Vertriebskanäle oder benutzerdefinierten Felder gefunden."
+    }
+  }
+}

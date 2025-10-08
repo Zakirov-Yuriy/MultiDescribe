@@ -1,0 +1,27 @@
+{% block multi_describe_card %}
+    <sw-card :title="$tc('multi-describe.card.title')">
+        <div v-if="product && customFieldSet && salesChannels.length > 0">
+            <sw-tabs position="left">
+                <sw-tabs-item
+                    v-for="salesChannel in salesChannels"
+                    :key="salesChannel.id"
+                    :name="salesChannel.id"
+                    :title="salesChannel.translated.name">
+
+                    <div v-for="field in customFieldSet.customFields" v-if="field.name.endsWith(salesChannel.id)">
+                        <sw-field
+                            :key="field.name"
+                            :label="field.config.label[$store.state.adminLocale.currentLocale]"
+                            v-if="product.customFields">
+                            <sw-text-editor
+                                v-model="product.customFields[field.name]">
+                            </sw-text-editor>
+                        </sw-field>
+                    </div>
+
+                </sw-tabs-item>
+            </sw-tabs>
+        </div>
+        <sw-empty-state v-else :title="$tc('multi-describe.card.noData')"></sw-empty-state>
+    </sw-card>
+{% endblock %}

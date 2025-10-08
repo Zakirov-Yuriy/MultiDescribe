@@ -1,0 +1,13 @@
+services:
+  shopware:
+    image: dockware/dev:latest
+    container_name: shopware-dev
+    ports:
+      - "80:80"
+      - "3306:3306"
+      - "22:22"
+    volumes:
+      - ./MultiDescribe:/var/www/html/custom/plugins/MultiDescribe
+    environment:
+      - XDEBUG_ENABLED=1
+      - XDEBUG_CONFIG=client_host=host.docker.internal
